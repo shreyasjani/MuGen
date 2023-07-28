@@ -30,6 +30,13 @@ body {
     margin: 30px 0;
 }
 
+.input i {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-420%);
+    margin-left: 90%;
+}
+
 .input input {
     height: 100%;
     width: 90%;
@@ -49,9 +56,9 @@ body {
 }
 
 .regbtn {
-    width: 60%;
+    width: 40%;
     height: 40px;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 10%;
     border-radius: 20px;
     border: none;
@@ -67,4 +74,25 @@ body {
 .regbtn:active {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(191, 25, 0, 0.768);
+}
+
+.back {
+    font-size: 20px;
+    width: 20%;
+    height: 40px;
+    margin-left: 5%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.back:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(191, 25, 0, 0.768) ;
+}
+
+.back a {
+    text-decoration: none;
+    color:rgb(255, 89, 0);
+    font-weight: 600;
 }

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background: url(background.png) no-repeat center center fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+.main {
+    background: rgba(0, 0, 0, .8);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    color: white;
+    width: 300px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 5 0 0 0;
+}
+
+.main .input {
+    width: 95%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input input {
+    height: 100%;
+    width: 90%;
+    margin: 5px 0 0 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white; 
+    padding-left: 20px;
+}
+
+.input input::placeholder {
+    color: white;
+    padding: 0px;
+}
+
+.regbtn {
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 89, 0);
+    font-weight: 600;
+}
+
+.regbtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(191, 25, 0, 0.768);
+}
+
+.regbtn:active {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(191, 25, 0, 0.768);
+}

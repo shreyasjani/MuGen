@@ -6,29 +6,57 @@
     <link rel="stylesheet" href="reg.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>MuGen Register</title>
+    <script>
+        function validateForm() {
+            let u = document.forms["Myform"]["Username"].value;
+            let e = document.forms["Myform"]["email"].value;
+            let p = document.forms["Myform"]["pass"].value;
+            let cp = document.forms["Myform"]["cpass"].value;
+
+            if (u=="") {
+                alert ("Name is a Mandatory field");
+                return false;
+            }
+            
+            if (e=="") {
+                alert ("Email is a Mandatory field");
+                return false;
+            }
+
+            if (p=="") {
+                alert ("Password is a Mandatory field");
+                return false;
+            }
+
+            if (cp != p) {
+                alert ("Passwords should match");
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="main">
-    <form>
+    <form name="Myform" onsubmit="return validateForm()">
         <div >
             <h1>
             Register
             </h1>
         </div>
         <div class="input">
-            <input type="text" class="input" placeholder="Username" required>
+            <input type="text" name="Username" class="input" placeholder="Username">
             <i class='bx bxs-user-detail'></i>
         </div>
         <div class="input">
-            <input type="email" class="input" placeholder="Email" required>
+            <input type="email" name="email" class="input" placeholder="Email">
             <i class='bx bx-envelope'></i>
         </div>
         <div class="input">
-            <input type="password" class="input" placeholder="Password" required>
+            <input type="password" name="pass" class="input" placeholder="Password">
             <i class='bx bxs-lock-alt'></i>
         </div>
         <div class="input">
-            <input type="text" class="input" placeholder="Confirm Password" required>
+            <input type="text" name="cpass" class="input" placeholder="Confirm Password">
             <i class='bx bx-lock-alt'></i>
         </div>
         <div>
